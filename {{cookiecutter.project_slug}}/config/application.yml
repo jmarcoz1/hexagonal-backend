@@ -1,0 +1,18 @@
+app:
+  name: "{{ cookiecutter.project_name }}"
+  version: "0.1.0"
+  log_level: !ENV ${APP_LOG_LEVEL:INFO}
+
+server:
+  host: "0.0.0.0"
+  port: !ENV ${APP_PORT:8000}
+
+database:
+  host: !ENV ${DB_HOST:localhost}
+  port: !ENV ${DB_PORT:5432}
+  name: !ENV ${DB_NAME:{{ cookiecutter.project_slug }}_db}
+  user: !ENV ${DB_USER:{{ cookiecutter.project_slug }}_user}
+  password: !ENV ${DB_PASSWORD:secret}
+  pool_size: 5
+  max_overflow: 10
+  echo: false

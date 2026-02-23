@@ -1,0 +1,5 @@
+database:
+  echo: true
+
+app:
+  log_level: DEBUG

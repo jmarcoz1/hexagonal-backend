@@ -1,0 +1,8 @@
+{
+  "project_name": "My Hexagonal Backend",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_description": "A Python backend following hexagonal architecture",
+  "author_name": "Your Name",
+  "author_email": "your.email@example.com",
+  "python_version": "3.12"
+}
