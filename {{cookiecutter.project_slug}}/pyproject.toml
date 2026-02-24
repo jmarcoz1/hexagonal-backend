@@ -10,8 +10,9 @@ requires-python = ">={{ cookiecutter.python_version }}"
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.34.0",
+    "gunicorn (>=23.0.0,<24.0.0)",
     "sqlalchemy>=2.0.0",
-    "psycopg2-binary>=2.9.0",
+    "psycopg[pool,binary]>=3.3.2",
     "dependency-injector>=4.48.0",
     "pydantic-settings>=2.6.0",
     "pyaml-env>=1.2.0",
